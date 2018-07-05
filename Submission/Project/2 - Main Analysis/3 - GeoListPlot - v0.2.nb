@@ -10,10 +10,10 @@
 NotebookFileLineBreakTest
 NotebookFileLineBreakTest
 NotebookDataPosition[       161,          7]
-NotebookDataLength[     39461,        928]
-NotebookOptionsPosition[     38341,        899]
-NotebookOutlinePosition[     38706,        915]
-CellTagsIndexPosition[     38663,        912]
+NotebookDataLength[     41785,        974]
+NotebookOptionsPosition[     40374,        942]
+NotebookOutlinePosition[     40739,        958]
+CellTagsIndexPosition[     40696,        955]
 WindowFrame->Normal*)
 
 (* Beginning of Notebook Content *)
@@ -850,9 +850,9 @@ Cell[BoxData[
          Manipulate`Place[1], 
          Dynamic[$CellContext`firstdateD + 
           Quantity[$CellContext`t$$/$CellContext`scaleTime1, "Years"]]}]], 
-      Manipulate`Dump`ThisIsNotAControl}}, Typeset`size$$ = {
-    420., {117., 122.}}, Typeset`update$$ = 0, Typeset`initDone$$, 
-    Typeset`skipInitDone$$ = True, $CellContext`t$666818$$ = 0}, 
+      Manipulate`Dump`ThisIsNotAControl}}, Typeset`size$$ = {807., {3., 9.}}, 
+    Typeset`update$$ = 0, Typeset`initDone$$, Typeset`skipInitDone$$ = 
+    True, $CellContext`t$666818$$ = 0}, 
     DynamicBox[Manipulate`ManipulateBoxes[
      2, StandardForm, "Variables" :> {$CellContext`t$$ = 169.72602739726028`},
        "ControllerVariables" :> {
@@ -874,7 +874,7 @@ Cell[BoxData[
           Dynamic[$CellContext`firstdateD + 
            Quantity[$CellContext`t$$/$CellContext`scaleTime1, "Years"]]}]}, 
       "Options" :> {}, "DefaultOptions" :> {}],
-     ImageSizeCache->{471., {164., 171.}},
+     ImageSizeCache->{858., {57., 64.}},
      SingleEvaluation->True],
     Deinitialization:>None,
     DynamicModuleValues:>{},
@@ -894,7 +894,50 @@ Cell[BoxData[
    3.7397910648634872`*^9, 3.7397911634318542`*^9, 3.739791284108612*^9, {
    3.739791379431054*^9, 3.7397913823698206`*^9}},
  CellLabel->
-  "Out[284]=",ExpressionUUID->"660a4ce4-27bb-471b-8a1e-9d3328031fef"]
+  "Out[284]=",ExpressionUUID->"660a4ce4-27bb-471b-8a1e-9d3328031fef"],
+
+Cell[BoxData[
+ TemplateBox[{
+  "Select","normal",
+   "\"Nonatomic expression expected at position \
+\\!\\(\\*RowBox[{\\\"1\\\"}]\\) in \\!\\(\\*RowBox[{\\\"Select\\\", \
+\\\"[\\\", RowBox[{\\\"listTimeCountyI\\\", \\\",\\\", \
+RowBox[{RowBox[{RowBox[{\\\"#1\\\", \\\"\[LeftDoubleBracket]\\\", \\\"1\\\", \
+\\\"\[RightDoubleBracket]\\\"}], \\\"\[LessEqual]\\\", \\\"FE`t$$567\\\"}], \
+\\\"&\\\"}]}], \\\"]\\\"}]\\).\"",2,107,28,24792265508890738196,"Local"},
+  "MessageTemplate"]], "Message", "MSG",
+ CellChangeTimes->{3.739805916592783*^9},
+ CellLabel->"",ExpressionUUID->"4f2317d5-41a2-4464-ba82-7261cb0b5de8"],
+
+Cell[BoxData[
+ TemplateBox[{
+  "Part","partd",
+   "\"Part specification \\!\\(\\*RowBox[{RowBox[{\\\"Select\\\", \\\"[\\\", \
+RowBox[{\\\"listTimeCountyI\\\", \\\",\\\", \
+RowBox[{RowBox[{RowBox[{\\\"#1\\\", \\\"\[LeftDoubleBracket]\\\", \\\"1\\\", \
+\\\"\[RightDoubleBracket]\\\"}], \\\"\[LessEqual]\\\", \\\"FE`t$$567\\\"}], \
+\\\"&\\\"}]}], \\\"]\\\"}], \\\"\[LeftDoubleBracket]\\\", \
+RowBox[{\\\"All\\\", \\\",\\\", \\\"2\\\"}], \
+\\\"\[RightDoubleBracket]\\\"}]\\) is longer than depth of object.\"",2,107,
+   29,24792265508890738196,"Local"},
+  "MessageTemplate"]], "Message", "MSG",
+ CellChangeTimes->{3.7398059166561213`*^9},
+ CellLabel->"",ExpressionUUID->"19f9fac4-ba4d-4ef9-a2d6-12f2a7ce340e"],
+
+Cell[BoxData[
+ TemplateBox[{
+  "GeoListPlot","ngeoents",
+   "\"\\!\\(\\*RowBox[{RowBox[{\\\"Select\\\", \\\"[\\\", \
+RowBox[{\\\"listTimeCountyI\\\", \\\",\\\", \
+RowBox[{RowBox[{RowBox[{\\\"#1\\\", \\\"\[LeftDoubleBracket]\\\", \\\"1\\\", \
+\\\"\[RightDoubleBracket]\\\"}], \\\"\[LessEqual]\\\", \\\"FE`t$$567\\\"}], \
+\\\"&\\\"}]}], \\\"]\\\"}], \\\"\[LeftDoubleBracket]\\\", \
+RowBox[{\\\"All\\\", \\\",\\\", \\\"2\\\"}], \
+\\\"\[RightDoubleBracket]\\\"}]\\) is not a list or nested list of \
+geographical entities\"",2,107,30,24792265508890738196,"Local"},
+  "MessageTemplate"]], "Message", "MSG",
+ CellChangeTimes->{3.739805916702995*^9},
+ CellLabel->"",ExpressionUUID->"db1d4a96-b34c-420a-abe1-9d7f802c6a1e"]
 }, Open  ]]
 },
 WindowSize->{1264, 637},
@@ -928,7 +971,10 @@ Cell[32068, 755, 404, 11, 32, "Output",ExpressionUUID->"04cf5601-d9d9-4e6f-b7af-
 }, Open  ]],
 Cell[CellGroupData[{
 Cell[32509, 771, 2953, 66, 124, "Input",ExpressionUUID->"d213ba5d-2f85-41e3-90d2-b5bbf200c606"],
-Cell[35465, 839, 2860, 57, 354, "Output",ExpressionUUID->"660a4ce4-27bb-471b-8a1e-9d3328031fef"]
+Cell[35465, 839, 2854, 57, 140, "Output",ExpressionUUID->"660a4ce4-27bb-471b-8a1e-9d3328031fef"],
+Cell[38322, 898, 611, 11, 21, "Message",ExpressionUUID->"4f2317d5-41a2-4464-ba82-7261cb0b5de8"],
+Cell[38936, 911, 705, 13, 21, "Message",ExpressionUUID->"19f9fac4-ba4d-4ef9-a2d6-12f2a7ce340e"],
+Cell[39644, 926, 714, 13, 21, "Message",ExpressionUUID->"db1d4a96-b34c-420a-abe1-9d7f802c6a1e"]
 }, Open  ]]
 }
 ]
