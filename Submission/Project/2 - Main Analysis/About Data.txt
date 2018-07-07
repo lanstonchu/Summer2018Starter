@@ -12,7 +12,10 @@ The data in this folder are the cleaned data.
 
 --------------------------------------------------------
 
-Protest Data structure
+Protest Data structure 1
+data up to June 30, 2018
+2a - analysis - Count Love.xlsx
+
 Column 1: Date (i.e. Number of days from 1900/1/1)
 Column 2: Location
 Column 3: Protest scale
@@ -27,6 +30,9 @@ Column 10: For data selection (whether relating to Gun protest)
 --------------------------------------------------------
 
 Mass Shooting Data structure:-
+data up to June 30, 2018
+2b - analysis - MST 2013 - 2018.xlsx
+
 Column 1: Date (i.e. Number of days from 1900/1/1)
 Column 2: Location
 Column 3: Numer of people killed
