@@ -10,10 +10,10 @@
 NotebookFileLineBreakTest
 NotebookFileLineBreakTest
 NotebookDataPosition[       161,          7]
-NotebookDataLength[     40934,        990]
-NotebookOptionsPosition[     39949,        964]
-NotebookOutlinePosition[     40314,        980]
-CellTagsIndexPosition[     40271,        977]
+NotebookDataLength[     19884,        455]
+NotebookOptionsPosition[     19027,        432]
+NotebookOutlinePosition[     19392,        448]
+CellTagsIndexPosition[     19349,        445]
 WindowFrame->Normal*)
 
 (* Beginning of Notebook Content *)
@@ -22,9 +22,12 @@ Notebook[{
 Cell[CellGroupData[{
 Cell[BoxData[{
  RowBox[{
+  RowBox[{"iCluster", "=", "8"}], ";", " ", 
+  RowBox[{"(*", 
+   RowBox[{"5", ",", " ", "6", ",", " ", "8"}], "*)"}], "\[IndentingNewLine]", 
   RowBox[{"ctsI", "=", 
    RowBox[{"cts", "[", 
-    RowBox[{"[", "7", "]"}], "]"}]}], ";"}], "\[IndentingNewLine]", 
+    RowBox[{"[", "iCluster", "]"}], "]"}]}], ";"}], "\[IndentingNewLine]", 
  RowBox[{
   RowBox[{"tMin", "=", 
    RowBox[{"Min", "@", 
@@ -56,11 +59,13 @@ Cell[BoxData[{
    3.7397874140550475`*^9, 3.739787481306836*^9, {3.7397877818255863`*^9, 
    3.7397877842134523`*^9}, 3.7397878253379655`*^9, {3.739788050226373*^9, 
    3.7397880582327237`*^9}, 3.7397892153562913`*^9, 3.7397912683376055`*^9, 
-   3.739791370216625*^9, 3.7398260729040017`*^9},
- CellLabel->
-  "In[701]:=",ExpressionUUID->"974d09f3-70ea-4a6b-b505-42c8a404d1f3"],
+   3.739791370216625*^9, 3.7398260729040017`*^9, {3.739920786366353*^9, 
+   3.7399207928935256`*^9}, {3.739920887621891*^9, 3.739920941164415*^9}, {
+   3.7399209817341857`*^9, 
+   3.7399210557726126`*^9}},ExpressionUUID->"974d09f3-70ea-4a6b-b505-\
+42c8a404d1f3"],
 
-Cell[BoxData["189"], "Output",
+Cell[BoxData["40"], "Output",
  CellChangeTimes->{
   3.7395796390939054`*^9, 3.739579704487656*^9, 3.7395802250302896`*^9, 
    3.739580619132416*^9, 3.7395807388405995`*^9, 3.739580971484109*^9, 
@@ -79,9 +84,10 @@ Cell[BoxData["189"], "Output",
    3.739791272061144*^9, 3.7397913737792344`*^9, 3.73981384187716*^9, 
    3.7398142026873426`*^9, 3.7398260221048756`*^9, {3.7398260736684766`*^9, 
    3.739826078500766*^9}, 3.739826114646814*^9, 3.7399206501003866`*^9, 
-   3.739920707998763*^9},
+   3.739920707998763*^9, 3.7399208105567102`*^9, {3.7399208913186297`*^9, 
+   3.7399209460320597`*^9}, {3.7399209849984584`*^9, 3.739921024279357*^9}},
  CellLabel->
-  "Out[704]=",ExpressionUUID->"4f858fcb-c4ac-447e-b7b9-80b0d4623233"]
+  "Out[773]=",ExpressionUUID->"7b0ce4d2-c992-49c1-91a4-819b03057b1d"]
 }, Open  ]],
 
 Cell[BoxData[
@@ -122,44 +128,28 @@ Cell[BoxData[
    3.739579801167001*^9}, {3.739580918176632*^9, 3.739580962788411*^9}, 
    3.739581096260228*^9, 3.7395812735817575`*^9, 3.739826110634512*^9},
  CellLabel->
-  "In[705]:=",ExpressionUUID->"d6d0184d-6a1c-48ae-affb-3febc5e17825"],
-
-Cell[CellGroupData[{
+  "In[774]:=",ExpressionUUID->"d6d0184d-6a1c-48ae-affb-3febc5e17825"],
 
 Cell[BoxData[
- RowBox[{"gr", "=", 
-  RowBox[{"GeoRange", "/.", 
-   RowBox[{"AbsoluteOptions", "[", 
-    RowBox[{
-     RowBox[{"GeoListPlot", "@", 
-      RowBox[{"listTimeCountyI", "[", 
-       RowBox[{"[", 
-        RowBox[{"All", ",", "2"}], "]"}], "]"}]}], "/.", 
-     RowBox[{"GeoPosition", "\[Rule]", "Identity"}]}], "]"}]}]}]], "Input",
+ RowBox[{
+  RowBox[{"gr", "=", 
+   RowBox[{"GeoRange", "/.", 
+    RowBox[{"AbsoluteOptions", "[", 
+     RowBox[{
+      RowBox[{"GeoListPlot", "@", 
+       RowBox[{"listTimeCountyI", "[", 
+        RowBox[{"[", 
+         RowBox[{"All", ",", "2"}], "]"}], "]"}]}], "/.", 
+      RowBox[{"GeoPosition", "\[Rule]", "Identity"}]}], "]"}]}]}], 
+  ";"}]], "Input",
  CellChangeTimes->{{3.739555095415862*^9, 3.7395551253657155`*^9}, {
    3.7395552300468197`*^9, 3.739555270033267*^9}, {3.7395553089531555`*^9, 
    3.7395553130986977`*^9}, {3.7395556800787582`*^9, 
    3.7395557002479963`*^9}, {3.739555774723486*^9, 3.739555775482329*^9}, {
-   3.739555886776346*^9, 3.739555891444811*^9}, 3.7395806323648415`*^9},
+   3.739555886776346*^9, 3.739555891444811*^9}, 3.7395806323648415`*^9, 
+   3.73992080561265*^9},
  CellLabel->
-  "In[706]:=",ExpressionUUID->"a58bc600-fd8f-4d0b-8499-a0eae9b82b54"],
-
-Cell[BoxData[
- RowBox[{"{", 
-  RowBox[{
-   RowBox[{"{", 
-    RowBox[{"24.573710850836576`", ",", "37.0126073880554`"}], "}"}], ",", 
-   RowBox[{"{", 
-    RowBox[{
-     RowBox[{"-", "99.29973215`"}], ",", 
-     RowBox[{"-", "77.25278085`"}]}], "}"}]}], "}"}]], "Output",
- CellChangeTimes->{3.7397912803252325`*^9, 3.739791379342349*^9, 
-  3.7398138638851786`*^9, 3.739814207179347*^9, 3.7398260462369547`*^9, 
-  3.739826081061987*^9, 3.739826115227239*^9, 3.7399206504585114`*^9, 
-  3.7399207083177214`*^9},
- CellLabel->
-  "Out[706]=",ExpressionUUID->"3e526647-5ede-4bec-9bd3-9922203ccd93"]
-}, Open  ]],
+  "In[775]:=",ExpressionUUID->"a58bc600-fd8f-4d0b-8499-a0eae9b82b54"],
 
 Cell[CellGroupData[{
 
@@ -174,7 +164,7 @@ Cell[BoxData[
         RowBox[{
          RowBox[{
           RowBox[{"#", "[", 
-           RowBox[{"[", "1", "]"}], "]"}], "\[LessEqual]", "tt"}], "&"}]}], 
+           RowBox[{"[", "1", "]"}], "]"}], "\[LessEqual]", "date"}], "&"}]}], 
        "]"}], "[", 
       RowBox[{"[", 
        RowBox[{"All", ",", "2"}], "]"}], "]"}], ",", 
@@ -186,14 +176,14 @@ Cell[BoxData[
      RowBox[{
       RowBox[{"Control", "[", 
        RowBox[{"{", 
-        RowBox[{"tt", ",", "tMin", ",", "tMax", ",", "Slider", ",", 
+        RowBox[{"date", ",", "tMin", ",", "tMax", ",", "Slider", ",", 
          RowBox[{"AutoAction", "\[Rule]", "False"}]}], "}"}], "]"}], ",", 
       RowBox[{"Dynamic", "[", 
        RowBox[{"firstdateD", "+", 
         RowBox[{"Quantity", "[", 
          RowBox[{
-          RowBox[{"tt", "/", "scaleTime1"}], ",", "\"\<Years\>\""}], "]"}]}], 
-       "]"}]}], "}"}], "]"}], ",", 
+          RowBox[{"date", "/", "scaleTime1"}], ",", "\"\<Years\>\""}], 
+         "]"}]}], "]"}]}], "}"}], "]"}], ",", 
    RowBox[{"SaveDefinitions", "\[Rule]", "True"}]}], "]"}]], "Input",
  CellChangeTimes->{{3.739494947632682*^9, 3.7394950138633175`*^9}, {
    3.739495084129429*^9, 3.7394951349917383`*^9}, {3.739555910338109*^9, 
@@ -215,31 +205,31 @@ Cell[BoxData[
    3.739815631961585*^9}, {3.739826051742525*^9, 3.73982605302608*^9}, {
    3.7398261298265247`*^9, 3.7398261448021517`*^9}, {3.73982661847501*^9, 
    3.7398266318720064`*^9}, 3.7398267880519924`*^9, {3.7399206893465385`*^9, 
-   3.739920700429019*^9}},
+   3.739920700429019*^9}, {3.739921274503294*^9, 3.7399212802155695`*^9}},
  CellLabel->
-  "In[707]:=",ExpressionUUID->"d213ba5d-2f85-41e3-90d2-b5bbf200c606"],
+  "In[777]:=",ExpressionUUID->"d213ba5d-2f85-41e3-90d2-b5bbf200c606"],
 
 Cell[BoxData[
  TagBox[
   StyleBox[
-   DynamicModuleBox[{$CellContext`tt$$ = 176.7, Typeset`show$$ = True, 
-    Typeset`bookmarkList$$ = {}, Typeset`bookmarkMode$$ = "Menu", 
-    Typeset`animator$$, Typeset`animvar$$ = 1, Typeset`name$$ = 
-    "\"untitled\"", Typeset`specs$$ = {{
-      Hold[$CellContext`tt$$], 167.32876712328766`, 185.06849315068496`}, {
+   DynamicModuleBox[{$CellContext`date$$ = 102.60273972602741`, 
+    Typeset`show$$ = True, Typeset`bookmarkList$$ = {}, 
+    Typeset`bookmarkMode$$ = "Menu", Typeset`animator$$, Typeset`animvar$$ = 
+    1, Typeset`name$$ = "\"untitled\"", Typeset`specs$$ = {{
+      Hold[$CellContext`date$$], 102.60273972602741`, 174.5205479452055}, {
       Hold[
        Row[{
          Manipulate`Place[1], 
          Dynamic[$CellContext`firstdateD + 
-          Quantity[$CellContext`tt$$/$CellContext`scaleTime1, "Years"]]}]], 
+          Quantity[$CellContext`date$$/$CellContext`scaleTime1, "Years"]]}]], 
       Manipulate`Dump`ThisIsNotAControl}}, Typeset`size$$ = {
-    420., {99., 104.}}, Typeset`update$$ = 0, Typeset`initDone$$, 
-    Typeset`skipInitDone$$ = False, $CellContext`tt$865656$$ = 0}, 
+    420., {153., 159.}}, Typeset`update$$ = 0, Typeset`initDone$$, 
+    Typeset`skipInitDone$$ = False, $CellContext`date$1096976$$ = 0}, 
     DynamicBox[Manipulate`ManipulateBoxes[
      2, StandardForm, 
-      "Variables" :> {$CellContext`tt$$ = 167.32876712328766`}, 
+      "Variables" :> {$CellContext`date$$ = 102.60273972602741`}, 
       "ControllerVariables" :> {
-        Hold[$CellContext`tt$$, $CellContext`tt$865656$$, 0]}, 
+        Hold[$CellContext`date$$, $CellContext`date$1096976$$, 0]}, 
       "OtherVariables" :> {
        Typeset`show$$, Typeset`bookmarkList$$, Typeset`bookmarkMode$$, 
         Typeset`animator$$, Typeset`animvar$$, Typeset`name$$, 
@@ -247,694 +237,170 @@ Cell[BoxData[
          Typeset`skipInitDone$$}, "Body" :> GeoListPlot[
         Part[
          Select[$CellContext`listTimeCountyI, 
-          Part[#, 1] <= $CellContext`tt$$& ], All, 2], 
+          Part[#, 1] <= $CellContext`date$$& ], All, 2], 
         GeoRange -> $CellContext`gr, GeoProjection -> "CylindricalEqualArea"],
-       "Specifications" :> {{$CellContext`tt$$, 167.32876712328766`, 
-         185.06849315068496`, ControlType -> Slider, AutoAction -> False, 
+       "Specifications" :> {{$CellContext`date$$, 102.60273972602741`, 
+         174.5205479452055, ControlType -> Slider, AutoAction -> False, 
          ControlPlacement -> 1}, 
         Row[{
           Manipulate`Place[1], 
           
           Dynamic[$CellContext`firstdateD + 
-           Quantity[$CellContext`tt$$/$CellContext`scaleTime1, "Years"]]}]}, 
-      "Options" :> {}, "DefaultOptions" :> {}],
-     ImageSizeCache->{471., {146., 153.}},
+           Quantity[$CellContext`date$$/$CellContext`scaleTime1, "Years"]]}]},
+       "Options" :> {}, "DefaultOptions" :> {}],
+     ImageSizeCache->{471., {200., 207.}},
      SingleEvaluation->True],
     Deinitialization:>None,
     DynamicModuleValues:>{},
-    Initialization:>({$CellContext`listTimeCountyI = {{185.06849315068496`, 
+    Initialization:>({$CellContext`listTimeCountyI = {{174.5205479452055, 
           Entity[
           "AdministrativeDivision", {
-           "BrowardCounty", "Florida", "UnitedStates"}]}, {
-         185.06849315068496`, 
+           "JacksonCounty", "Oregon", "UnitedStates"}]}, {174.5205479452055, 
           Entity[
           "AdministrativeDivision", {
-           "PalmBeachCounty", "Florida", "UnitedStates"}]}, {
-         185.06849315068496`, 
+           "JacksonCounty", "Oregon", "UnitedStates"}]}, {174.04109589041096`, 
           Entity[
           "AdministrativeDivision", {
-           "CollierCounty", "Florida", "UnitedStates"}]}, {
-         185.06849315068496`, 
+           "LassenCounty", "California", "UnitedStates"}]}, {
+         173.08219178082192`, 
           Entity[
           "AdministrativeDivision", {
-           "PalmBeachCounty", "Florida", "UnitedStates"}]}, {
-         185.06849315068496`, 
+           "MaricopaCounty", "Arizona", "UnitedStates"}]}, {172.6027397260274, 
           Entity[
           "AdministrativeDivision", {
-           "MiamiDadeCounty", "Florida", "UnitedStates"}]}, {
-         185.06849315068496`, 
+           "SantaClaraCounty", "California", "UnitedStates"}]}, {
+         172.6027397260274, 
           Entity[
           "AdministrativeDivision", {
-           "LeeCounty", "Florida", "UnitedStates"}]}, {185.06849315068496`, 
+           "WeberCounty", "Utah", "UnitedStates"}]}, {172.12328767123287`, 
           Entity[
           "AdministrativeDivision", {
-           "MartinCounty", "Florida", "UnitedStates"}]}, {185.06849315068496`, 
-          Entity[
-          "AdministrativeDivision", {
-           "PalmBeachCounty", "Florida", "UnitedStates"}]}, {
-         185.06849315068496`, 
-          Entity[
-          "AdministrativeDivision", {
-           "PalmBeachCounty", "Florida", "UnitedStates"}]}, {
-         185.06849315068496`, 
-          Entity[
-          "AdministrativeDivision", {
-           "MiamiDadeCounty", "Florida", "UnitedStates"}]}, {
-         185.06849315068496`, 
-          Entity[
-          "AdministrativeDivision", {
-           "BrowardCounty", "Florida", "UnitedStates"}]}, {
-         183.15068493150685`, 
-          Entity[
-          "AdministrativeDivision", {
-           "BrowardCounty", "Florida", "UnitedStates"}]}, {
-         180.27397260273972`, 
-          Entity[
-          "AdministrativeDivision", {
-           "PalmBeachCounty", "Florida", "UnitedStates"}]}, {
-         180.27397260273972`, 
-          Entity[
-          "AdministrativeDivision", {
-           "HillsboroughCounty", "Florida", "UnitedStates"}]}, {
-         180.27397260273972`, 
-          Entity[
-          "AdministrativeDivision", {
-           "DuvalCounty", "Florida", "UnitedStates"}]}, {180.27397260273972`, 
-          Entity[
-          "AdministrativeDivision", {
-           "CameronCounty", "Texas", "UnitedStates"}]}, {180.27397260273972`, 
-          Entity[
-          "AdministrativeDivision", {
-           "GlynnCounty", "Georgia", "UnitedStates"}]}, {180.27397260273972`, 
-          Entity[
-          "AdministrativeDivision", {
-           "BrowardCounty", "Florida", "UnitedStates"}]}, {
-         180.27397260273972`, 
-          Entity[
-          "AdministrativeDivision", {
-           "ThomasCounty", "Georgia", "UnitedStates"}]}, {180.27397260273972`, 
-          Entity[
-          "AdministrativeDivision", {
-           "AlachuaCounty", "Florida", "UnitedStates"}]}, {
-         180.27397260273972`, 
-          Entity[
-          "AdministrativeDivision", {
-           "AlachuaCounty", "Florida", "UnitedStates"}]}, {
-         180.27397260273972`, 
-          Entity[
-          "AdministrativeDivision", {
-           "PolkCounty", "Florida", "UnitedStates"}]}, {180.27397260273972`, 
-          Entity[
-          "AdministrativeDivision", {
-           "BrowardCounty", "Florida", "UnitedStates"}]}, {
-         180.27397260273972`, 
-          Entity[
-          "AdministrativeDivision", {
-           "HillsboroughCounty", "Florida", "UnitedStates"}]}, {
-         180.27397260273972`, 
-          Entity[
-          "AdministrativeDivision", {
-           "LeeCounty", "Florida", "UnitedStates"}]}, {180.27397260273972`, 
-          Entity[
-          "AdministrativeDivision", {
-           "PalmBeachCounty", "Florida", "UnitedStates"}]}, {
-         180.27397260273972`, 
-          Entity[
-          "AdministrativeDivision", {
-           "LafayetteParish", "Louisiana", "UnitedStates"}]}, {
-         180.27397260273972`, 
-          Entity[
-          "AdministrativeDivision", {
-           "PalmBeachCounty", "Florida", "UnitedStates"}]}, {
-         180.27397260273972`, 
-          Entity[
-          "AdministrativeDivision", {
-           "BrowardCounty", "Florida", "UnitedStates"}]}, {
-         180.27397260273972`, 
-          Entity[
-          "AdministrativeDivision", {
-           "DuvalCounty", "Florida", "UnitedStates"}]}, {180.27397260273972`, 
-          Entity[
-          "AdministrativeDivision", {
-           "LowndesCounty", "Georgia", "UnitedStates"}]}, {
-         180.27397260273972`, 
-          Entity[
-          "AdministrativeDivision", {
-           "TiftCounty", "Georgia", "UnitedStates"}]}, {180.27397260273972`, 
-          Entity[
-          "AdministrativeDivision", {
-           "MuscogeeCounty", "Georgia", "UnitedStates"}]}, {
-         180.27397260273972`, 
-          Entity[
-          "AdministrativeDivision", {
-           "StJohnsCounty", "Florida", "UnitedStates"}]}, {
-         180.27397260273972`, 
-          Entity[
-          "AdministrativeDivision", {
-           "DuvalCounty", "Florida", "UnitedStates"}]}, {180.27397260273972`, 
-          Entity[
-          "AdministrativeDivision", {
-           "DuvalCounty", "Florida", "UnitedStates"}]}, {180.27397260273972`, 
-          Entity[
-          "AdministrativeDivision", {
-           "StJohnsCounty", "Florida", "UnitedStates"}]}, {
-         180.27397260273972`, 
-          Entity[
-          "AdministrativeDivision", {
-           "DuvalCounty", "Florida", "UnitedStates"}]}, {180.27397260273972`, 
-          Entity[
-          "AdministrativeDivision", {
-           "PalmBeachCounty", "Florida", "UnitedStates"}]}, {
-         180.27397260273972`, 
-          Entity[
-          "AdministrativeDivision", {
-           "ManateeCounty", "Florida", "UnitedStates"}]}, {
-         180.27397260273972`, 
-          Entity[
-          "AdministrativeDivision", {
-           "ColquittCounty", "Georgia", "UnitedStates"}]}, {
-         180.27397260273972`, 
-          Entity[
-          "AdministrativeDivision", {
-           "BrowardCounty", "Florida", "UnitedStates"}]}, {
-         180.27397260273972`, 
-          Entity[
-          "AdministrativeDivision", {
-           "StJohnsCounty", "Florida", "UnitedStates"}]}, {
-         180.27397260273972`, 
-          Entity[
-          "AdministrativeDivision", {
-           "DuvalCounty", "Florida", "UnitedStates"}]}, {180.27397260273972`, 
-          Entity[
-          "AdministrativeDivision", {
-           "AscensionParish", "Louisiana", "UnitedStates"}]}, {
-         180.27397260273972`, 
-          Entity[
-          "AdministrativeDivision", {
-           "OrangeCounty", "Florida", "UnitedStates"}]}, {180.27397260273972`, 
-          Entity[
-          "AdministrativeDivision", {
-           "BrowardCounty", "Florida", "UnitedStates"}]}, {
-         180.27397260273972`, 
-          Entity[
-          "AdministrativeDivision", {
-           "ManateeCounty", "Florida", "UnitedStates"}]}, {
-         180.27397260273972`, 
-          Entity[
-          "AdministrativeDivision", {
-           "ManateeCounty", "Florida", "UnitedStates"}]}, {
-         180.27397260273972`, 
-          Entity[
-          "AdministrativeDivision", {
-           "DuvalCounty", "Florida", "UnitedStates"}]}, {180.27397260273972`, 
-          Entity[
-          "AdministrativeDivision", {
-           "MiamiDadeCounty", "Florida", "UnitedStates"}]}, {
-         180.27397260273972`, 
-          Entity[
-          "AdministrativeDivision", {
-           "MiamiDadeCounty", "Florida", "UnitedStates"}]}, {
-         180.27397260273972`, 
-          Entity[
-          "AdministrativeDivision", {
-           "SarasotaCounty", "Florida", "UnitedStates"}]}, {
-         180.27397260273972`, 
-          Entity[
-          "AdministrativeDivision", {
-           "MuscogeeCounty", "Georgia", "UnitedStates"}]}, {
-         180.27397260273972`, 
-          Entity[
-          "AdministrativeDivision", {
-           "DuvalCounty", "Florida", "UnitedStates"}]}, {180.27397260273972`, 
-          Entity[
-          "AdministrativeDivision", {
-           "DuvalCounty", "Florida", "UnitedStates"}]}, {180.27397260273972`, 
-          Entity[
-          "AdministrativeDivision", {
-           "MuscogeeCounty", "Georgia", "UnitedStates"}]}, {
-         180.27397260273972`, 
-          Entity[
-          "AdministrativeDivision", {
-           "DuvalCounty", "Florida", "UnitedStates"}]}, {180.27397260273972`, 
-          Entity[
-          "AdministrativeDivision", {
-           "ManateeCounty", "Florida", "UnitedStates"}]}, {
-         180.27397260273972`, 
-          Entity[
-          "AdministrativeDivision", {
-           "StJohnsCounty", "Florida", "UnitedStates"}]}, {
-         180.27397260273972`, 
-          Entity[
-          "AdministrativeDivision", {
-           "StJohnsCounty", "Florida", "UnitedStates"}]}, {
-         180.27397260273972`, 
-          Entity[
-          "AdministrativeDivision", {
-           "DuvalCounty", "Florida", "UnitedStates"}]}, {180.27397260273972`, 
-          Entity[
-          "AdministrativeDivision", {
-           "OrleansParish", "Louisiana", "UnitedStates"}]}, {
-         180.27397260273972`, 
-          Entity[
-          "AdministrativeDivision", {
-           "StJohnsCounty", "Florida", "UnitedStates"}]}, {
-         180.27397260273972`, 
-          Entity[
-          "AdministrativeDivision", {
-           "IndianRiverCounty", "Florida", "UnitedStates"}]}, {
-         180.27397260273972`, 
-          Entity[
-          "AdministrativeDivision", {
-           "OrangeCounty", "Florida", "UnitedStates"}]}, {180.27397260273972`, 
-          Entity[
-          "AdministrativeDivision", {
-           "BrowardCounty", "Florida", "UnitedStates"}]}, {
-         180.27397260273972`, 
-          Entity[
-          "AdministrativeDivision", {
-           "PascoCounty", "Florida", "UnitedStates"}]}, {180.27397260273972`, 
-          Entity[
-          "AdministrativeDivision", {
-           "NassauCounty", "Florida", "UnitedStates"}]}, {178.35616438356166`, 
-          Entity[
-          "AdministrativeDivision", {
-           "BrowardCounty", "Florida", "UnitedStates"}]}, {
-         176.91780821917808`, 
-          Entity[
-          "AdministrativeDivision", {
-           "VolusiaCounty", "Florida", "UnitedStates"}]}, {
-         175.95890410958904`, 
-          Entity[
-          "AdministrativeDivision", {
-           "PalmBeachCounty", "Florida", "UnitedStates"}]}, {175., 
-          Entity[
-          "AdministrativeDivision", {
-           "MorganCounty", "Alabama", "UnitedStates"}]}, {175., 
-          Entity[
-          "AdministrativeDivision", {
-           "FultonCounty", "Georgia", "UnitedStates"}]}, {175., 
-          Entity[
-          "AdministrativeDivision", {
-           "LeonCounty", "Florida", "UnitedStates"}]}, {174.5205479452055, 
-          Entity[
-          "AdministrativeDivision", {
-           "ClarkeCounty", "Georgia", "UnitedStates"}]}, {173.56164383561645`, 
-          Entity[
-          "AdministrativeDivision", {
-           "ManateeCounty", "Florida", "UnitedStates"}]}, {
-         173.56164383561645`, 
-          Entity[
-          "AdministrativeDivision", {
-           "OrangeCounty", "Florida", "UnitedStates"}]}, {173.56164383561645`, 
-          Entity[
-          "AdministrativeDivision", {
-           "GuilfordCounty", "NorthCarolina", "UnitedStates"}]}, {
-         173.56164383561645`, 
-          Entity[
-          "AdministrativeDivision", {
-           "MadisonCounty", "Alabama", "UnitedStates"}]}, {172.6027397260274, 
-          Entity[
-          "AdministrativeDivision", {
-           "LeonCounty", "Florida", "UnitedStates"}]}, {172.6027397260274, 
-          Entity[
-          "AdministrativeDivision", {
-           "NewtonCounty", "Georgia", "UnitedStates"}]}, {172.6027397260274, 
-          Entity[
-          "AdministrativeDivision", {
-           "ManateeCounty", "Florida", "UnitedStates"}]}, {
-         172.12328767123287`, 
-          Entity[
-          "AdministrativeDivision", {
-           "KnoxCounty", "Tennessee", "UnitedStates"}]}, {172.12328767123287`, 
-          Entity[
-          "AdministrativeDivision", {
-           "BrowardCounty", "Florida", "UnitedStates"}]}, {
-         172.12328767123287`, 
-          Entity[
-          "AdministrativeDivision", {
-           "BrowardCounty", "Florida", "UnitedStates"}]}, {
+           "LosAngelesCounty", "California", "UnitedStates"}]}, {
          171.64383561643834`, 
           Entity[
           "AdministrativeDivision", {
-           "TravisCounty", "Texas", "UnitedStates"}]}, {171.64383561643834`, 
-          Entity[
-          "AdministrativeDivision", {
-           "BrowardCounty", "Florida", "UnitedStates"}]}, {
-         171.64383561643834`, 
-          Entity[
-          "AdministrativeDivision", {
-           "PutnamCounty", "Tennessee", "UnitedStates"}]}, {
+           "YakimaCounty", "Washington", "UnitedStates"}]}, {
          171.16438356164383`, 
           Entity[
           "AdministrativeDivision", {
-           "PalmBeachCounty", "Florida", "UnitedStates"}]}, {
+           "SanJoaquinCounty", "California", "UnitedStates"}]}, {
          171.16438356164383`, 
           Entity[
           "AdministrativeDivision", {
-           "HillsboroughCounty", "Florida", "UnitedStates"}]}, {
+           "SanJoaquinCounty", "California", "UnitedStates"}]}, {
          171.16438356164383`, 
           Entity[
           "AdministrativeDivision", {
-           "GuilfordCounty", "NorthCarolina", "UnitedStates"}]}, {
+           "SanJoaquinCounty", "California", "UnitedStates"}]}, {
          171.16438356164383`, 
           Entity[
           "AdministrativeDivision", {
-           "TravisCounty", "Texas", "UnitedStates"}]}, {171.16438356164383`, 
-          Entity[
-          "AdministrativeDivision", {
-           "CollierCounty", "Florida", "UnitedStates"}]}, {
+           "SanJoaquinCounty", "California", "UnitedStates"}]}, {
          171.16438356164383`, 
           Entity[
           "AdministrativeDivision", {
-           "TravisCounty", "Texas", "UnitedStates"}]}, {171.16438356164383`, 
-          Entity[
-          "AdministrativeDivision", {
-           "TravisCounty", "Texas", "UnitedStates"}]}, {171.16438356164383`, 
-          Entity[
-          "AdministrativeDivision", {
-           "TravisCounty", "Texas", "UnitedStates"}]}, {171.16438356164383`, 
-          Entity[
-          "AdministrativeDivision", {
-           "SarasotaCounty", "Florida", "UnitedStates"}]}, {
-         171.16438356164383`, 
-          Entity[
-          "AdministrativeDivision", {
-           "GuilfordCounty", "NorthCarolina", "UnitedStates"}]}, {
-         171.16438356164383`, 
-          Entity[
-          "AdministrativeDivision", {
-           "TravisCounty", "Texas", "UnitedStates"}]}, {171.16438356164383`, 
-          Entity[
-          "AdministrativeDivision", {
-           "BrowardCounty", "Florida", "UnitedStates"}]}, {
-         171.16438356164383`, 
-          Entity[
-          "AdministrativeDivision", {
-           "TravisCounty", "Texas", "UnitedStates"}]}, {171.16438356164383`, 
-          Entity[
-          "AdministrativeDivision", {
-           "GwinnettCounty", "Georgia", "UnitedStates"}]}, {
+           "SanJoaquinCounty", "California", "UnitedStates"}]}, {
          170.68493150684932`, 
           Entity[
           "AdministrativeDivision", {
-           "BrevardCounty", "Florida", "UnitedStates"}]}, {
-         170.68493150684932`, 
-          Entity[
-          "AdministrativeDivision", {
-           "SarasotaCounty", "Florida", "UnitedStates"}]}, {
-         170.68493150684932`, 
-          Entity[
-          "AdministrativeDivision", {
-           "CollierCounty", "Florida", "UnitedStates"}]}, {
-         170.68493150684932`, 
-          Entity[
-          "AdministrativeDivision", {
-           "OrangeCounty", "NorthCarolina", "UnitedStates"}]}, {
+           "OrangeCounty", "California", "UnitedStates"}]}, {
          170.2054794520548, 
           Entity[
           "AdministrativeDivision", {
-           "LeonCounty", "Florida", "UnitedStates"}]}, {170.2054794520548, 
-          Entity[
-          "AdministrativeDivision", {
-           "BrowardCounty", "Florida", "UnitedStates"}]}, {170.2054794520548, 
-          Entity[
-          "AdministrativeDivision", {
-           "FultonCounty", "Georgia", "UnitedStates"}]}, {170.2054794520548, 
-          Entity[
-          "AdministrativeDivision", {
-           "PalmBeachCounty", "Florida", "UnitedStates"}]}, {
+           "WhatcomCounty", "Washington", "UnitedStates"}]}, {
          170.2054794520548, 
           Entity[
           "AdministrativeDivision", {
-           "BrowardCounty", "Florida", "UnitedStates"}]}, {170.2054794520548, 
-          Entity[
-          "AdministrativeDivision", {
-           "StLucieCounty", "Florida", "UnitedStates"}]}, {170.2054794520548, 
-          Entity[
-          "AdministrativeDivision", {
-           "BrevardCounty", "Florida", "UnitedStates"}]}, {170.2054794520548, 
-          Entity[
-          "AdministrativeDivision", {
-           "TravisCounty", "Texas", "UnitedStates"}]}, {170.2054794520548, 
-          Entity[
-          "AdministrativeDivision", {
-           "HaysCounty", "Texas", "UnitedStates"}]}, {170.2054794520548, 
-          Entity[
-          "AdministrativeDivision", {
-           "CollierCounty", "Florida", "UnitedStates"}]}, {170.2054794520548, 
-          Entity[
-          "AdministrativeDivision", {
-           "PalmBeachCounty", "Florida", "UnitedStates"}]}, {
+           "KitsapCounty", "Washington", "UnitedStates"}]}, {
          170.2054794520548, 
           Entity[
           "AdministrativeDivision", {
-           "LeeCounty", "Florida", "UnitedStates"}]}, {170.2054794520548, 
-          Entity[
-          "AdministrativeDivision", {
-           "IndianRiverCounty", "Florida", "UnitedStates"}]}, {
+           "SanJoaquinCounty", "California", "UnitedStates"}]}, {
          170.2054794520548, 
           Entity[
           "AdministrativeDivision", {
-           "StLucieCounty", "Florida", "UnitedStates"}]}, {170.2054794520548, 
-          Entity[
-          "AdministrativeDivision", {
-           "WilliamsonCounty", "Texas", "UnitedStates"}]}, {170.2054794520548, 
-          Entity[
-          "AdministrativeDivision", {
-           "SarasotaCounty", "Florida", "UnitedStates"}]}, {170.2054794520548, 
-          Entity[
-          "AdministrativeDivision", {
-           "WilliamsonCounty", "Texas", "UnitedStates"}]}, {170.2054794520548, 
-          Entity[
-          "AdministrativeDivision", {
-           "LeeCounty", "Florida", "UnitedStates"}]}, {170.2054794520548, 
-          Entity[
-          "AdministrativeDivision", {
-           "TravisCounty", "Texas", "UnitedStates"}]}, {170.2054794520548, 
-          Entity[
-          "AdministrativeDivision", {
-           "MiamiDadeCounty", "Florida", "UnitedStates"}]}, {
+           "KitsapCounty", "Washington", "UnitedStates"}]}, {
          170.2054794520548, 
           Entity[
           "AdministrativeDivision", {
-           "LeeCounty", "Florida", "UnitedStates"}]}, {170.2054794520548, 
+           "MissoulaCounty", "Montana", "UnitedStates"}]}, {170.2054794520548, 
           Entity[
           "AdministrativeDivision", {
-           "BrowardCounty", "Florida", "UnitedStates"}]}, {170.2054794520548, 
+           "ClarkCounty", "Nevada", "UnitedStates"}]}, {170.2054794520548, 
           Entity[
           "AdministrativeDivision", {
-           "BrowardCounty", "Florida", "UnitedStates"}]}, {170.2054794520548, 
-          Entity[
-          "AdministrativeDivision", {
-           "MiamiDadeCounty", "Florida", "UnitedStates"}]}, {
+           "SanJoaquinCounty", "California", "UnitedStates"}]}, {
          170.2054794520548, 
           Entity[
           "AdministrativeDivision", {
-           "BrowardCounty", "Florida", "UnitedStates"}]}, {170.2054794520548, 
+           "MissoulaCounty", "Montana", "UnitedStates"}]}, {170.2054794520548, 
           Entity[
           "AdministrativeDivision", {
-           "BrowardCounty", "Florida", "UnitedStates"}]}, {170.2054794520548, 
+           "MaricopaCounty", "Arizona", "UnitedStates"}]}, {170.2054794520548, 
           Entity[
           "AdministrativeDivision", {
-           "LeeCounty", "Florida", "UnitedStates"}]}, {170.2054794520548, 
-          Entity[
-          "AdministrativeDivision", {
-           "MiamiDadeCounty", "Florida", "UnitedStates"}]}, {
+           "SpokaneCounty", "Washington", "UnitedStates"}]}, {
          170.2054794520548, 
           Entity[
           "AdministrativeDivision", {
-           "LeeCounty", "Florida", "UnitedStates"}]}, {170.2054794520548, 
+           "PimaCounty", "Arizona", "UnitedStates"}]}, {170.2054794520548, 
           Entity[
           "AdministrativeDivision", {
-           "BrowardCounty", "Florida", "UnitedStates"}]}, {170.2054794520548, 
-          Entity[
-          "AdministrativeDivision", {
-           "LeeCounty", "Florida", "UnitedStates"}]}, {170.2054794520548, 
-          Entity[
-          "AdministrativeDivision", {
-           "PalmBeachCounty", "Florida", "UnitedStates"}]}, {
+           "AlamedaCounty", "California", "UnitedStates"}]}, {
          170.2054794520548, 
           Entity[
           "AdministrativeDivision", {
-           "SeminoleCounty", "Florida", "UnitedStates"}]}, {170.2054794520548, 
-          Entity[
-          "AdministrativeDivision", {
-           "OsceolaCounty", "Florida", "UnitedStates"}]}, {170.2054794520548, 
-          Entity[
-          "AdministrativeDivision", {
-           "MiamiDadeCounty", "Florida", "UnitedStates"}]}, {
+           "LosAngelesCounty", "California", "UnitedStates"}]}, {
          170.2054794520548, 
           Entity[
           "AdministrativeDivision", {
-           "LeeCounty", "Florida", "UnitedStates"}]}, {170.2054794520548, 
-          Entity[
-          "AdministrativeDivision", {
-           "CollierCounty", "Florida", "UnitedStates"}]}, {170.2054794520548, 
-          Entity[
-          "AdministrativeDivision", {
-           "LeeCounty", "Florida", "UnitedStates"}]}, {170.2054794520548, 
-          Entity[
-          "AdministrativeDivision", {
-           "SeminoleCounty", "Florida", "UnitedStates"}]}, {170.2054794520548, 
-          Entity[
-          "AdministrativeDivision", {
-           "PalmBeachCounty", "Florida", "UnitedStates"}]}, {
-         170.2054794520548, 
-          Entity[
-          "AdministrativeDivision", {
-           "LeeCounty", "Florida", "UnitedStates"}]}, {170.2054794520548, 
-          Entity[
-          "AdministrativeDivision", {
-           "PalmBeachCounty", "Florida", "UnitedStates"}]}, {
-         170.2054794520548, 
-          Entity[
-          "AdministrativeDivision", {
-           "SeminoleCounty", "Florida", "UnitedStates"}]}, {170.2054794520548, 
-          Entity[
-          "AdministrativeDivision", {
-           "LeeCounty", "Florida", "UnitedStates"}]}, {170.2054794520548, 
-          Entity[
-          "AdministrativeDivision", {
-           "MiamiDadeCounty", "Florida", "UnitedStates"}]}, {
-         170.2054794520548, 
-          Entity[
-          "AdministrativeDivision", {
-           "MiamiDadeCounty", "Florida", "UnitedStates"}]}, {
-         170.2054794520548, 
-          Entity[
-          "AdministrativeDivision", {
-           "CollierCounty", "Florida", "UnitedStates"}]}, {170.2054794520548, 
-          Entity[
-          "AdministrativeDivision", {
-           "BrowardCounty", "Florida", "UnitedStates"}]}, {170.2054794520548, 
-          Entity[
-          "AdministrativeDivision", {
-           "SeminoleCounty", "Florida", "UnitedStates"}]}, {170.2054794520548, 
-          Entity[
-          "AdministrativeDivision", {
-           "MiamiDadeCounty", "Florida", "UnitedStates"}]}, {
-         170.2054794520548, 
-          Entity[
-          "AdministrativeDivision", {
-           "LeeCounty", "Florida", "UnitedStates"}]}, {170.2054794520548, 
-          Entity[
-          "AdministrativeDivision", {
-           "IndianRiverCounty", "Florida", "UnitedStates"}]}, {
-         170.2054794520548, 
-          Entity[
-          "AdministrativeDivision", {
-           "PalmBeachCounty", "Florida", "UnitedStates"}]}, {
-         170.2054794520548, 
-          Entity[
-          "AdministrativeDivision", {
-           "MartinCounty", "Florida", "UnitedStates"}]}, {170.2054794520548, 
-          Entity[
-          "AdministrativeDivision", {
-           "BrowardCounty", "Florida", "UnitedStates"}]}, {170.2054794520548, 
-          Entity[
-          "AdministrativeDivision", {
-           "BrowardCounty", "Florida", "UnitedStates"}]}, {170.2054794520548, 
-          Entity[
-          "AdministrativeDivision", {
-           "PalmBeachCounty", "Florida", "UnitedStates"}]}, {
+           "KitsapCounty", "Washington", "UnitedStates"}]}, {
          169.72602739726028`, 
           Entity[
           "AdministrativeDivision", {
-           "PalmBeachCounty", "Florida", "UnitedStates"}]}, {
+           "BernalilloCounty", "NewMexico", "UnitedStates"}]}, {
          169.72602739726028`, 
           Entity[
           "AdministrativeDivision", {
-           "BrowardCounty", "Florida", "UnitedStates"}]}, {
-         169.72602739726028`, 
-          Entity[
-          "AdministrativeDivision", {
-           "WakeCounty", "NorthCarolina", "UnitedStates"}]}, {
-         169.72602739726028`, 
-          Entity[
-          "AdministrativeDivision", {
-           "LeonCounty", "Florida", "UnitedStates"}]}, {169.72602739726028`, 
-          Entity[
-          "AdministrativeDivision", {
-           "WakeCounty", "NorthCarolina", "UnitedStates"}]}, {
-         169.72602739726028`, 
-          Entity[
-          "AdministrativeDivision", {
-           "PolkCounty", "NorthCarolina", "UnitedStates"}]}, {
-         169.72602739726028`, 
-          Entity[
-          "AdministrativeDivision", {
-           "EscambiaCounty", "Florida", "UnitedStates"}]}, {
-         169.72602739726028`, 
-          Entity[
-          "AdministrativeDivision", {
-           "CherokeeCounty", "Georgia", "UnitedStates"}]}, {
-         169.72602739726028`, 
-          Entity[
-          "AdministrativeDivision", {
-           "GastonCounty", "NorthCarolina", "UnitedStates"}]}, {
-         169.72602739726028`, 
-          Entity[
-          "AdministrativeDivision", {
-           "DurhamCounty", "NorthCarolina", "UnitedStates"}]}, {
-         169.72602739726028`, 
-          Entity[
-          "AdministrativeDivision", {
-           "BrowardCounty", "Florida", "UnitedStates"}]}, {
-         169.72602739726028`, 
-          Entity[
-          "AdministrativeDivision", {
-           "BrowardCounty", "Florida", "UnitedStates"}]}, {
-         169.72602739726028`, 
-          Entity[
-          "AdministrativeDivision", {
-           "LoudonCounty", "Tennessee", "UnitedStates"}]}, {
+           "PierceCounty", "Washington", "UnitedStates"}]}, {
          169.24657534246575`, 
           Entity[
           "AdministrativeDivision", {
-           "PalmBeachCounty", "Florida", "UnitedStates"}]}, {
+           "LosAngelesCounty", "California", "UnitedStates"}]}, {
          169.24657534246575`, 
           Entity[
           "AdministrativeDivision", {
-           "CharlestonCounty", "SouthCarolina", "UnitedStates"}]}, {
+           "SonomaCounty", "California", "UnitedStates"}]}, {
          169.24657534246575`, 
           Entity[
           "AdministrativeDivision", {
-           "WilliamsonCounty", "Tennessee", "UnitedStates"}]}, {
+           "KernCounty", "California", "UnitedStates"}]}, {
          169.24657534246575`, 
           Entity[
           "AdministrativeDivision", {
-           "TravisCounty", "Texas", "UnitedStates"}]}, {169.24657534246575`, 
-          Entity[
-          "AdministrativeDivision", {
-           "BrowardCounty", "Florida", "UnitedStates"}]}, {
-         168.76712328767124`, 
-          Entity[
-          "AdministrativeDivision", {
-           "BuncombeCounty", "NorthCarolina", "UnitedStates"}]}, {
-         168.28767123287673`, 
-          Entity[
-          "AdministrativeDivision", {
-           "BrowardCounty", "Florida", "UnitedStates"}]}, {
-         168.28767123287673`, 
-          Entity[
-          "AdministrativeDivision", {
-           "PinellasCounty", "Florida", "UnitedStates"}]}, {167.8082191780822, 
-          Entity[
-          "AdministrativeDivision", {
-           "BrowardCounty", "Florida", "UnitedStates"}]}, {167.8082191780822, 
-          Entity[
-          "AdministrativeDivision", {
-           "PalmBeachCounty", "Florida", "UnitedStates"}]}, {
+           "SnohomishCounty", "Washington", "UnitedStates"}]}, {
          167.32876712328766`, 
           Entity[
           "AdministrativeDivision", {
-           "BrowardCounty", "Florida", "UnitedStates"}]}, {
-         167.32876712328766`, 
+           "LincolnCounty", "Oregon", "UnitedStates"}]}, {138.56164383561642`, 
           Entity[
           "AdministrativeDivision", {
-           "WashingtonCounty", "Tennessee", 
-            "UnitedStates"}]}}, $CellContext`gr = {{24.573710850836576`, 
-        37.0126073880554}, {-99.29973215, -77.25278085}}, \
+           "MarinCounty", "California", "UnitedStates"}]}, {119.3835616438356, 
+          Entity[
+          "AdministrativeDivision", {
+           "SanDiegoCounty", "California", "UnitedStates"}]}, {
+         104.04109589041096`, 
+          Entity[
+          "AdministrativeDivision", {
+           "CacheCounty", "Utah", "UnitedStates"}]}, {104.04109589041096`, 
+          Entity[
+          "AdministrativeDivision", {
+           "WashoeCounty", "Nevada", "UnitedStates"}]}, {102.60273972602741`, 
+          Entity[
+          "AdministrativeDivision", {
+           "SanDiegoCounty", "California", 
+            "UnitedStates"}]}}, $CellContext`gr = {{30.5473145966181, 
+        49.88131206682771}, {-125.01416262804112`, -105.25126235104565`}}, \
 $CellContext`firstdateD = 
        DateObject[{2017, 3, 3}, "Day", 
          "Gregorian", -4.], $CellContext`scaleTime1 = 175}; 
@@ -957,9 +423,11 @@ $CellContext`firstdateD =
    3.7398142072712617`*^9, 3.739814319557663*^9, {3.739826046340761*^9, 
    3.73982608133498*^9}, {3.739826115287623*^9, 3.739826145359803*^9}, {
    3.7398266209425488`*^9, 3.7398266326106553`*^9}, 3.7398267723190904`*^9, 
-   3.739826824287171*^9, 3.7399206505034275`*^9, 3.739920708375595*^9},
+   3.739826824287171*^9, 3.7399206505034275`*^9, 3.739920708375595*^9, 
+   3.739920812054018*^9, {3.739920892657739*^9, 3.739920949831649*^9}, {
+   3.739920987478421*^9, 3.739921024996262*^9}, 3.739921281856224*^9},
  CellLabel->
-  "Out[707]=",ExpressionUUID->"664662e1-68b3-45e9-8b5d-aa23f59150af"]
+  "Out[777]=",ExpressionUUID->"bae4fe7e-779a-4fd5-b838-532ebe20c16e"]
 }, Open  ]]
 },
 WindowSize->{1264, 637},
@@ -980,17 +448,14 @@ CellTagsIndex->{}
 (*NotebookFileOutline
 Notebook[{
 Cell[CellGroupData[{
-Cell[583, 22, 1742, 38, 86, "Input",ExpressionUUID->"974d09f3-70ea-4a6b-b505-42c8a404d1f3"],
-Cell[2328, 62, 1412, 21, 32, "Output",ExpressionUUID->"4f858fcb-c4ac-447e-b7b9-80b0d4623233"]
+Cell[583, 22, 2021, 43, 105, "Input",ExpressionUUID->"974d09f3-70ea-4a6b-b505-42c8a404d1f3"],
+Cell[2607, 67, 1537, 22, 32, "Output",ExpressionUUID->"7b0ce4d2-c992-49c1-91a4-819b03057b1d"]
 }, Open  ]],
-Cell[3755, 86, 1591, 38, 48, "Input",ExpressionUUID->"d6d0184d-6a1c-48ae-affb-3febc5e17825"],
+Cell[4159, 92, 1591, 38, 48, "Input",ExpressionUUID->"d6d0184d-6a1c-48ae-affb-3febc5e17825"],
+Cell[5753, 132, 825, 19, 28, "Input",ExpressionUUID->"a58bc600-fd8f-4d0b-8499-a0eae9b82b54"],
 Cell[CellGroupData[{
-Cell[5371, 128, 771, 16, 28, "Input",ExpressionUUID->"a58bc600-fd8f-4d0b-8499-a0eae9b82b54"],
-Cell[6145, 146, 589, 14, 32, "Output",ExpressionUUID->"3e526647-5ede-4bec-9bd3-9922203ccd93"]
-}, Open  ]],
-Cell[CellGroupData[{
-Cell[6771, 165, 2785, 54, 67, "Input",ExpressionUUID->"d213ba5d-2f85-41e3-90d2-b5bbf200c606"],
-Cell[9559, 221, 30374, 740, 318, "Output",ExpressionUUID->"664662e1-68b3-45e9-8b5d-aa23f59150af"]
+Cell[6603, 155, 2841, 54, 67, "Input",ExpressionUUID->"d213ba5d-2f85-41e3-90d2-b5bbf200c606"],
+Cell[9447, 211, 9564, 218, 426, "Output",ExpressionUUID->"bae4fe7e-779a-4fd5-b838-532ebe20c16e"]
 }, Open  ]]
 }
 ]
