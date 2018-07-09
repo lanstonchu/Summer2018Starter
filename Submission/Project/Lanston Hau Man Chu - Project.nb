@@ -3,19 +3,19 @@
 NotebookFileLineBreakTest
 NotebookFileLineBreakTest
 NotebookDataPosition[         0,          0]
-NotebookDataLength[   1912008,      32009]
-NotebookOptionsPosition[   1900046,      31792]
-NotebookOutlinePosition[   1905164,      31909]
-CellTagsIndexPosition[   1904939,      31900]
+NotebookDataLength[   1915265,      32082]
+NotebookOptionsPosition[   1903038,      31859]
+NotebookOutlinePosition[   1908156,      31976]
+CellTagsIndexPosition[   1907931,      31967]
 WindowFrame->Normal*)
 
 (* Beginning of Notebook Content *)
 Notebook[{
-Cell["Last modified on: Monday, July 9, 2018 at 13:08", "TemplateInstructions",
+Cell["Last modified on: Monday, July 9, 2018 at 19:56", "TemplateInstructions",
  Deployed->True,
  Background->RGBColor[0.75, 0.75, 0.75],
  CellTags->
-  "LastModified",ExpressionUUID->"f5f0dbc7-472a-4bbe-84f0-0d2e9a1394c2"],
+  "LastModified",ExpressionUUID->"43e7cf6b-cfba-4093-8780-599fe0788fe5"],
 
 Cell[CellGroupData[{
 
@@ -10746,7 +10746,7 @@ Cell[TextData[{
      Typeset`animator$$, Typeset`animvar$$ = 1, Typeset`name$$ = 
      "\"untitled\"", Typeset`specs$$ = {{
        Hold[$CellContext`Cluster$$], {1, 2, 3, 4, 5, 6, 7, 8, 9}}}, 
-     Typeset`size$$ = {304., {213., 219.}}, Typeset`update$$ = 0, 
+     Typeset`size$$ = {806., {213., 219.}}, Typeset`update$$ = 0, 
      Typeset`initDone$$, Typeset`skipInitDone$$ = 
      False, $CellContext`Cluster$88303$$ = 0}, 
      DynamicBox[Manipulate`ManipulateBoxes[
@@ -10764,7 +10764,7 @@ Cell[TextData[{
        "Specifications" :> {{$CellContext`Cluster$$, {1, 2, 3, 4, 5, 6, 7, 8, 
           9}, ControlType -> SetterBar}}, "Options" :> {}, 
        "DefaultOptions" :> {}],
-      ImageSizeCache->{355., {259., 266.}},
+      ImageSizeCache->{857., {259., 266.}},
       SingleEvaluation->True],
      Deinitialization:>None,
      DynamicModuleValues:>{},
@@ -16537,10 +16537,55 @@ Cell["Written Content / Lesson Plans", "Subsubsection",
   3.736182124333714*^9},ExpressionUUID->"ba68b18e-0118-4694-9cc8-\
 e616df451654"],
 
+Cell[CellGroupData[{
+
 Cell["Conclusions in Detail", "Subsubsection",
  CellChangeTimes->{
   3.736182152929455*^9},ExpressionUUID->"405e0fe7-2022-4d50-b275-\
 5f85c6659f37"],
+
+Cell[TextData[{
+ "To conclude, we have used cluster analysis with Euclidean distance on the \
+time - space metric space of the gun protests events.There are nine clusters \
+in the continental United States from March 2017 to June 2018. There is a \
+significant relationship between the bottom boundary of the clusters and the \
+severe mass shooting cases.Inside each cluster, we have used spanning tree to \
+construct the network between protest.After reviewing the statistics of the \
+tree' s edge, we would conclude that the jump can be basically fitted by an \
+exponential distribution.A prediction model can be constructed based on the \
+exponential distributions of the clusters.The factors of protest diffusion \
+can be separated into two types of main drivers : geographical diffusion and \
+burst, respectively acting in the long and short timeframe.Their difference \
+can be summed up in the below table :\n\n",
+ Cell[BoxData[GridBox[{
+    {
+     RowBox[{"Factor", " "}], 
+     RowBox[{"Geographical", " ", "Diffusion"}], "Burst"},
+    {
+     RowBox[{
+      RowBox[{"Length", " ", "of", " ", "timeframe"}], "\[IndentingNewLine]", 
+      RowBox[{"being", " ", "acted", " ", "on"}]}], "Long", "Short"},
+    {
+     RowBox[{"Spreading", " ", "Pattern"}], 
+     RowBox[{"More", " ", "geographical"}], 
+     RowBox[{"Less", " ", "geogaphical"}]},
+    {
+     RowBox[{"Potential", " ", "drivers"}], 
+     RowBox[{
+      RowBox[{
+       RowBox[{"Acquaintances", " ", "contagion"}], ";"}], 
+      "\[IndentingNewLine]", 
+      RowBox[{"Resources", " ", "transportation"}]}], "Internet"}
+   },
+   GridBoxDividers->{
+    "Columns" -> {{True}}, "ColumnsIndexed" -> {}, "Rows" -> {{True}}, 
+     "RowsIndexed" -> {}}]],ExpressionUUID->
+  "3851dbe3-115f-4f80-8454-41195277d49e"]
+}], "Text",
+ CellChangeTimes->{{3.7401690885229177`*^9, 
+  3.7401692076023364`*^9}},ExpressionUUID->"15d1e8c4-47e2-4c48-aae4-\
+158aa4487302"]
+}, Open  ]],
 
 Cell[CellGroupData[{
 
@@ -16605,7 +16650,7 @@ $CellContext`KilledScaleFilter$$, $CellContext`WoundedScaleFilter$$],
           0., 1., 2., 3., 4., 5., 6., 7., 8., 9., 12., 13., 14., 15., 17., 
           20., 25., 422.}, ControlType -> Slider, Appearance -> "Labeled"}}, 
        "Options" :> {}, "DefaultOptions" :> {}],
-      ImageSizeCache->{799., {284., 291.}},
+      ImageSizeCache->{32780., {284., 291.}},
       SingleEvaluation->True],
      Deinitialization:>None,
      DynamicModuleValues:>{},
@@ -25432,7 +25477,7 @@ Cell[BoxData[
       "Specifications" :> {{$CellContext`Cluster$$, {1, 2, 3, 4, 5, 6, 7, 8, 
          9}, ControlType -> SetterBar}}, "Options" :> {}, 
       "DefaultOptions" :> {}],
-     ImageSizeCache->{32780., {257., 264.}},
+     ImageSizeCache->{794., {257., 264.}},
      SingleEvaluation->True],
     Deinitialization:>None,
     DynamicModuleValues:>{},
@@ -31656,10 +31701,32 @@ Mass Shooting Tracker (MST) : https : // www.massshootingtracker.org/\
 03abcab30ebe"]
 }, Open  ]],
 
+Cell[CellGroupData[{
+
 Cell["Future Directions", "Subsubsection",
  CellChangeTimes->{{3.7361822218287*^9, 
   3.7361822234759083`*^9}},ExpressionUUID->"9afe7952-52cb-49e5-812a-\
 edf95df8c363"],
+
+Cell["\<\
+There are two drivers on event spread within the cluster, namely geographical \
+diffusion and burst, each has their own impact on long and short timeframe \
+respectively.To explain the pattern of protest spread, both the geographical \
+diffusion and burst factor should be considered and be modeled to provide a \
+coherent view of the whole picture.In the future, we would try to figure out \
+how to separate the two factors from the data.It is expected that the former \
+can be processed by the similar tree - MLE approach, while the latter can be \
+processed further by time series.
+
+It is expected that the cluster - tree - MLE approach for diffusion can be \
+applicable to the other areas regarding contagion, including social practices \
+or fields such as contagious diseases.More future studies to apply the \
+technique to those areas can be done.\
+\>", "Text",
+ CellChangeTimes->{{3.740169298981556*^9, 
+  3.7401693143060074`*^9}},ExpressionUUID->"8e6c4db8-b7ed-45cc-98c3-\
+b5bcc4f5ee9c"]
+}, Open  ]],
 
 Cell[CellGroupData[{
 
@@ -31881,7 +31948,7 @@ StyleDefinitions->Notebook[{
 (*CellTagsOutline
 CellTagsIndex->{
  "LastModified"->{
-  Cell[400, 13, 222, 4, 51, "TemplateInstructions",ExpressionUUID->"f5f0dbc7-472a-4bbe-84f0-0d2e9a1394c2",
+  Cell[400, 13, 222, 4, 51, "TemplateInstructions",ExpressionUUID->"43e7cf6b-cfba-4093-8780-599fe0788fe5",
    CellTags->"LastModified"]},
  "AuthorInfo"->{
   Cell[647, 21, 218, 5, 67, "TemplateSectionHeaders",ExpressionUUID->"47541fce-e5a1-4793-b8e1-e1340b437ca6",
@@ -31899,16 +31966,16 @@ CellTagsIndex->{
 *)
 (*CellTagsIndex
 CellTagsIndex->{
- {"LastModified", 1904117, 31882},
- {"AuthorInfo", 1904272, 31885},
- {"PosterContent", 1904430, 31888},
- {"PresentationContent", 1904598, 31891},
- {"ProjectNotes", 1904770, 31894}
+ {"LastModified", 1907109, 31949},
+ {"AuthorInfo", 1907264, 31952},
+ {"PosterContent", 1907422, 31955},
+ {"PresentationContent", 1907590, 31958},
+ {"ProjectNotes", 1907762, 31961}
  }
 *)
 (*NotebookFileOutline
 Notebook[{
-Cell[400, 13, 222, 4, 51, "TemplateInstructions",ExpressionUUID->"f5f0dbc7-472a-4bbe-84f0-0d2e9a1394c2",
+Cell[400, 13, 222, 4, 51, "TemplateInstructions",ExpressionUUID->"43e7cf6b-cfba-4093-8780-599fe0788fe5",
  CellTags->"LastModified"],
 Cell[CellGroupData[{
 Cell[647, 21, 218, 5, 67, "TemplateSectionHeaders",ExpressionUUID->"47541fce-e5a1-4793-b8e1-e1340b437ca6",
@@ -31958,49 +32025,55 @@ Cell[992991, 16522, 343, 8, 51, "Item",ExpressionUUID->"3cb4354c-c176-4459-9588-
 }, Open  ]]
 }, Open  ]],
 Cell[993361, 16534, 157, 3, 44, "Subsubsection",ExpressionUUID->"ba68b18e-0118-4694-9cc8-e616df451654"],
-Cell[993521, 16539, 148, 3, 36, "Subsubsection",ExpressionUUID->"405e0fe7-2022-4d50-b275-5f85c6659f37"],
 Cell[CellGroupData[{
-Cell[993694, 16546, 169, 3, 36, "Subsubsection",ExpressionUUID->"aa59b7ca-7848-48f1-96cf-6286c1fabb09"],
-Cell[993866, 16551, 228, 4, 34, "Text",ExpressionUUID->"aabbb9ee-ddb5-480b-87db-4e094544b53d"],
-Cell[994097, 16557, 527115, 8832, 622, "Input",ExpressionUUID->"34f3823d-1ee7-4431-aa75-78f767e5837a"],
-Cell[1521215, 25391, 217, 4, 34, "Text",ExpressionUUID->"003c033f-2de0-43a9-9e10-da3bc4e2bca5"],
-Cell[1521435, 25397, 182293, 3002, 536, "Input",ExpressionUUID->"9fe39980-d521-4936-8cbe-173446086375"],
-Cell[1703731, 28401, 276, 4, 34, "Text",ExpressionUUID->"95a260e8-05a2-4d1e-a5d4-1a1e33492e62"],
-Cell[1704010, 28407, 34410, 582, 350, "Input",ExpressionUUID->"a4fcae9d-b21b-45cc-a19e-2a65f2623665"],
-Cell[1738423, 28991, 224, 4, 34, "Text",ExpressionUUID->"53d6664a-be81-4f31-bd96-320a61c1d780"],
-Cell[1738650, 28997, 146560, 2419, 346, "Input",ExpressionUUID->"8d0720ff-628d-43c4-8133-f15cced4cf5b"],
-Cell[1885213, 31418, 218, 4, 34, "Text",ExpressionUUID->"79a3f3ea-be71-427e-91b3-ed675cf6919e"],
-Cell[1885434, 31424, 9366, 215, 422, "Input",ExpressionUUID->"2a908fea-ffcc-4d06-a43d-5b2fc2812125"]
+Cell[993543, 16541, 148, 3, 36, "Subsubsection",ExpressionUUID->"405e0fe7-2022-4d50-b275-5f85c6659f37"],
+Cell[993694, 16546, 1913, 40, 350, "Text",ExpressionUUID->"15d1e8c4-47e2-4c48-aae4-158aa4487302"]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[1894837, 31644, 156, 3, 44, "Subsubsection",ExpressionUUID->"8d03133e-d036-4673-985c-415dd5ec88bb"],
-Cell[1894996, 31649, 272, 6, 56, "Text",ExpressionUUID->"78607002-fcc3-430c-aa5b-03abcab30ebe"]
+Cell[995644, 16591, 169, 3, 44, "Subsubsection",ExpressionUUID->"aa59b7ca-7848-48f1-96cf-6286c1fabb09"],
+Cell[995816, 16596, 228, 4, 34, "Text",ExpressionUUID->"aabbb9ee-ddb5-480b-87db-4e094544b53d"],
+Cell[996047, 16602, 527117, 8832, 622, "Input",ExpressionUUID->"34f3823d-1ee7-4431-aa75-78f767e5837a"],
+Cell[1523167, 25436, 217, 4, 34, "Text",ExpressionUUID->"003c033f-2de0-43a9-9e10-da3bc4e2bca5"],
+Cell[1523387, 25442, 182291, 3002, 536, "Input",ExpressionUUID->"9fe39980-d521-4936-8cbe-173446086375"],
+Cell[1705681, 28446, 276, 4, 34, "Text",ExpressionUUID->"95a260e8-05a2-4d1e-a5d4-1a1e33492e62"],
+Cell[1705960, 28452, 34410, 582, 350, "Input",ExpressionUUID->"a4fcae9d-b21b-45cc-a19e-2a65f2623665"],
+Cell[1740373, 29036, 224, 4, 34, "Text",ExpressionUUID->"53d6664a-be81-4f31-bd96-320a61c1d780"],
+Cell[1740600, 29042, 146560, 2419, 346, "Input",ExpressionUUID->"8d0720ff-628d-43c4-8133-f15cced4cf5b"],
+Cell[1887163, 31463, 218, 4, 34, "Text",ExpressionUUID->"79a3f3ea-be71-427e-91b3-ed675cf6919e"],
+Cell[1887384, 31469, 9366, 215, 422, "Input",ExpressionUUID->"2a908fea-ffcc-4d06-a43d-5b2fc2812125"]
 }, Open  ]],
-Cell[1895283, 31658, 168, 3, 44, "Subsubsection",ExpressionUUID->"9afe7952-52cb-49e5-812a-edf95df8c363"],
 Cell[CellGroupData[{
-Cell[1895476, 31665, 159, 3, 36, "Subsubsection",ExpressionUUID->"19b709dc-5a9b-4a0e-8d93-1058844be4dd"],
-Cell[1895638, 31670, 1066, 23, 320, "Text",ExpressionUUID->"7f4198a6-fc2b-4cb0-843a-73b60eb99995"]
+Cell[1896787, 31689, 156, 3, 44, "Subsubsection",ExpressionUUID->"8d03133e-d036-4673-985c-415dd5ec88bb"],
+Cell[1896946, 31694, 272, 6, 56, "Text",ExpressionUUID->"78607002-fcc3-430c-aa5b-03abcab30ebe"]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[1896741, 31698, 132, 2, 44, "Subsubsection",ExpressionUUID->"6668b03b-4180-4966-b673-b20f85cb5927"],
-Cell[1896876, 31702, 219, 4, 34, "Text",ExpressionUUID->"a5e5e177-980c-46c4-8f4b-7804400a13ff"],
+Cell[1897255, 31705, 168, 3, 44, "Subsubsection",ExpressionUUID->"9afe7952-52cb-49e5-812a-edf95df8c363"],
+Cell[1897426, 31710, 1005, 17, 232, "Text",ExpressionUUID->"8e6c4db8-b7ed-45cc-98c3-b5bcc4f5ee9c"]
+}, Open  ]],
 Cell[CellGroupData[{
-Cell[1897120, 31710, 229, 4, 31, "Item",ExpressionUUID->"a0f68604-8bfc-4c6d-afb6-b6a38b6de7d0"],
-Cell[1897352, 31716, 183, 3, 31, "Item",ExpressionUUID->"d4791c55-e7db-46a0-8162-0eebcfa1df4d"],
-Cell[1897538, 31721, 209, 4, 31, "Item",ExpressionUUID->"039917a4-0bb5-4863-8644-5451bfaec857"],
-Cell[1897750, 31727, 211, 4, 31, "Item",ExpressionUUID->"6632cf12-293f-4224-a36e-5e02f3f00a2e"],
-Cell[1897964, 31733, 222, 4, 31, "Item",ExpressionUUID->"a6306cb9-5085-4729-a0ab-64cb8b7338b6"],
-Cell[1898189, 31739, 209, 4, 31, "Item",ExpressionUUID->"67d37183-c07a-4dbc-a510-1bd34c400eef"],
-Cell[1898401, 31745, 211, 4, 31, "Item",ExpressionUUID->"94725f07-541c-4ef4-a93a-a4d189101fd6"],
-Cell[1898615, 31751, 224, 4, 31, "Item",ExpressionUUID->"f2f2d360-a536-4847-9f92-6466440db4da"]
+Cell[1898468, 31732, 159, 3, 44, "Subsubsection",ExpressionUUID->"19b709dc-5a9b-4a0e-8d93-1058844be4dd"],
+Cell[1898630, 31737, 1066, 23, 320, "Text",ExpressionUUID->"7f4198a6-fc2b-4cb0-843a-73b60eb99995"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[1899733, 31765, 132, 2, 44, "Subsubsection",ExpressionUUID->"6668b03b-4180-4966-b673-b20f85cb5927"],
+Cell[1899868, 31769, 219, 4, 34, "Text",ExpressionUUID->"a5e5e177-980c-46c4-8f4b-7804400a13ff"],
+Cell[CellGroupData[{
+Cell[1900112, 31777, 229, 4, 31, "Item",ExpressionUUID->"a0f68604-8bfc-4c6d-afb6-b6a38b6de7d0"],
+Cell[1900344, 31783, 183, 3, 31, "Item",ExpressionUUID->"d4791c55-e7db-46a0-8162-0eebcfa1df4d"],
+Cell[1900530, 31788, 209, 4, 31, "Item",ExpressionUUID->"039917a4-0bb5-4863-8644-5451bfaec857"],
+Cell[1900742, 31794, 211, 4, 31, "Item",ExpressionUUID->"6632cf12-293f-4224-a36e-5e02f3f00a2e"],
+Cell[1900956, 31800, 222, 4, 31, "Item",ExpressionUUID->"a6306cb9-5085-4729-a0ab-64cb8b7338b6"],
+Cell[1901181, 31806, 209, 4, 31, "Item",ExpressionUUID->"67d37183-c07a-4dbc-a510-1bd34c400eef"],
+Cell[1901393, 31812, 211, 4, 31, "Item",ExpressionUUID->"94725f07-541c-4ef4-a93a-a4d189101fd6"],
+Cell[1901607, 31818, 224, 4, 31, "Item",ExpressionUUID->"f2f2d360-a536-4847-9f92-6466440db4da"]
 }, Open  ]]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[1898888, 31761, 172, 3, 44, "Subsubsection",ExpressionUUID->"5f589531-3a9b-47cd-a487-fcf2f80aa83f"],
+Cell[1901880, 31828, 172, 3, 44, "Subsubsection",ExpressionUUID->"5f589531-3a9b-47cd-a487-fcf2f80aa83f"],
 Cell[CellGroupData[{
-Cell[1899085, 31768, 318, 5, 31, "Item",ExpressionUUID->"c83b08b9-90ff-43df-9e77-ccfcaad6408e"],
-Cell[1899406, 31775, 287, 4, 31, "Item",ExpressionUUID->"17a3a5b1-a4f6-48b6-9e06-67122939ea13"],
-Cell[1899696, 31781, 310, 6, 31, "Item",ExpressionUUID->"6a50dde1-a23b-4f85-a4b0-47df1b62c403"]
+Cell[1902077, 31835, 318, 5, 31, "Item",ExpressionUUID->"c83b08b9-90ff-43df-9e77-ccfcaad6408e"],
+Cell[1902398, 31842, 287, 4, 31, "Item",ExpressionUUID->"17a3a5b1-a4f6-48b6-9e06-67122939ea13"],
+Cell[1902688, 31848, 310, 6, 31, "Item",ExpressionUUID->"6a50dde1-a23b-4f85-a4b0-47df1b62c403"]
 }, Open  ]]
 }, Open  ]]
 }, Open  ]]
